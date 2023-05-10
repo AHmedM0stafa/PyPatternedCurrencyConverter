@@ -27,4 +27,4 @@ PyPatternedCurrencyConverter : A Design Patterns-Powered Concurrency Converter i
 - This pattern allows the behavior of a class to be changed at runtime by selecting an appropriate algorithm to use.
 - In your implementation, the CurrencyConverter class has a conversion_strategy attribute that is set based on user input, allowing for different conversion strategies to be used.
 
-Overall, your implementation uses a variety of design patterns to make the code more modular, flexible, and maintainable. The use of a GUI built with tkinter makes it easy for users to interact with the CurrencyConverter app. However, it would be helpful to include more descriptive comments within the code itself to make it easier for other developers to understand the purpose of each class, method, and variable.
+Overall,implementation uses design patterns to make the code more modular, flexible, and maintainable. The use of a GUI built with tkinter makes it easy for users to interact with the CurrencyConverter app.
