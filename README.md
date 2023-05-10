@@ -2,29 +2,25 @@
 PyPatternedCurrencyConverter : A Design Patterns-Powered Concurrency Converter in Python
 
 
+## PyPatternedCurrencyConverter
+PyPatternedCurrencyConverter is a Python-based currency converter program that utilizes several design patterns to provide a flexible, scalable, and maintainable codebase. The program provides a graphical user interface (GUI) that allows users to convert currency values between various currencies.
 
-1. Dependency Injection Pattern:
-- This pattern focuses on making the code loosely coupled and easy to maintain.
-- It allows the injection of dependencies as parameters into the constructor of the CurrencyConverter class, making it more flexible and easy to test.
+The program is implemented using the following design patterns:
 
-2. Factory Pattern:
-- This pattern provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
-- In your implementation, you have a CurrencyConverterFactory class that returns an instance of the appropriate CurrencyConverter subclass based on user input.
+- Dependency Injection Pattern
+- Factory Pattern
+- Model-View-Controller (MVC) Pattern
+- Observer Pattern
+- Singleton Pattern
+- Strategy Pattern
 
-3. MVC Pattern:
-- This pattern separates the application into three main components: Model, View, and Controller.
-- In your implementation, the Model is the CurrencyConverter class, the View is the tkinter GUI, and the Controller is the CurrencyConverterController class that acts as a mediator between the Model and the View.
 
-4. Observer Pattern:
-- This pattern allows for one-to-many communication between objects. 
-- In your implementation, the CurrencyConverter class is observed by the CurrencyConverterView class which updates the View whenever the Model changes.
+The "Dependency Injection" pattern provides a decoupled design that allows for interchangeable components in the program. The "Factory" pattern simplifies the creation of objects in the program by providing a centralized method for creating objects. The "MVC" pattern separates the program's data model, user interface, and control logic, which allows for code reusability and easier maintenance. The "Observer" pattern provides a mechanism for objects to be notified of any changes in other objects, which enhances the program's scalability. The "Singleton" pattern ensures that there is only one instance of a class in the program. The "Strategy" pattern allows for interchangeable algorithms to be used for the currency conversion process.
 
-5. Singleton Pattern:
-- This pattern ensures that there is only one instance of a class, and provides a global point of access to that instance.
-- In your implementation, the CurrencyConverterFactory class is a singleton as there is only one instance of it created.
+PyPatternedCurrencyConverter is built using Python's Tkinter GUI library and utilizes the open-source currency exchange rate API, [ExchangeRatesAPI.io]([url](https://exchangeratesapi.io/)), to retrieve current currency exchange rates. The program supports over 30 different currencies, including USD, EUR, GBP, JPY, CAD, and AUD.
 
-6. Strategy Pattern:
-- This pattern allows the behavior of a class to be changed at runtime by selecting an appropriate algorithm to use.
-- In your implementation, the CurrencyConverter class has a conversion_strategy attribute that is set based on user input, allowing for different conversion strategies to be used.
+To run the program, simply download or clone the repository and run the design_pattern_you_want_gui.py file. The program's GUI will then launch, and you can enter your desired currency conversion values.
 
-Overall,implementation uses design patterns to make the code more modular, flexible, and maintainable. The use of a GUI built with tkinter makes it easy for users to interact with the CurrencyConverter app.
+PyPatternedCurrencyConverter is ideal for anyone looking to learn about design patterns and their practical application in real-world Python programming. It is also useful for anyone who needs to convert currency values frequently and requires a reliable, efficient, and easy-to-use program.
+
+Contributions to the project are always welcome, and we encourage you to contribute by submitting a pull request on GitHub.
